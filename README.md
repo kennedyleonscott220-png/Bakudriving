@@ -34,3 +34,16 @@ Bu, 2D canvas prototipidir; 3D qrafika və real avtomobil fizikasını tam simul
 ## Lisenziya
 
 MIT lisenziyası — detalları `LICENSE` faylında.
+
+
+## GitHub yeniləmə bildirişləri
+
+Oyunun işləyən versiyası GitHub-dakı `version.json` faylını hər 5 dəqiqədən bir yoxlayır. Daha yeni versiya tapılarsa, oyunda yeniləmə bildirişi görünür.
+
+### Bir dəfəlik quraşdırma
+1. `index.html` faylını aç və `UPDATE_CONFIG` sətrindəki `YOUR_GITHUB_USERNAME/baki-drive-simulator` hissəsini öz GitHub istifadəçi adın/repository adınla dəyiş. Məsələn: `cavid123/baki-drive-simulator`.
+2. `UPDATE_CONFIG.currentVersion` dəyərini `version.json` faylındakı versiya ilə eyni saxla.
+3. Hər yeniləmədə `version.json` içindəki `version` dəyərini artır (məsələn, `1.0.0` → `1.0.1`) və `notes` sahəsində dəyişiklikləri yaz.
+4. Dəyişmiş `index.html` və `version.json` fayllarını GitHub-a göndər. GitHub Pages yenilənəndən sonra oyuna daxil olan istifadəçilər yeni versiya bildirişi alacaqlar.
+
+**Vacib:** Bu sistem veb oyuna yeniləmə bildirişi verir və yenilənmiş saytı yenidən açır; istifadəçinin cihazına ayrıca APK/proqram kimi fayl quraşdırmır. GitHub Pages-də yayımlamaq üçün repository Settings → Pages bölməsində `main` branch və `/ (root)` seç.
